@@ -11,6 +11,9 @@ import Mirror from "../../assets/mirror.jpg";
 import Silhouette from "../../assets/silhouette.jpeg";
 import WC2 from "../../assets/watercolor2.jpeg";
 import Pannel4x8 from "../../assets/pannel4x8.jpg";
+import CharcoalMix from "../../assets/charcoalMix.jpeg";
+import CharcoalTan from "../../assets/charcoalTan.jpeg";
+import Stipple2 from "../../assets/stipple2.png";
 
 import Overlap from "../../assets/overlap.jpg";
 import Misplaced from "../../assets/misplaced.jpeg";
@@ -34,15 +37,21 @@ import "../../css/imageGrid.css";
 export default function Art() {
 
   const AP1 = [
-    { src: ArtEx, caption: "18x24 inch oil paint self portrait on a wooden pannel. (2024)" },
     { src: Pen, caption: "8x8 inch white gel pen stippling self portrait on black paper. (2025)" },
+    { src: WC2, caption: "18x24 inch water color self portrait on paper. (2026)" },
     { src: WaterColor, caption: "16x20 inch water color self portrait on paper. (2025)" },
   ];
 
   const AP2 = [
-    { src: Mirror, caption: "16x20 inch oil paint self portrait on canvas. (2025)" },
-    { src: WC2, caption: "18x24 inch water color self portrait on paper. (2026)" },
+    { src: CharcoalMix, caption: "12x15 inch charcoal self portrait on black and white paper (2026)" },
+    { src: ArtEx, caption: "18x24 inch oil paint self portrait on a wooden pannel. (2024)" },
+    { src: Stipple2, caption: "8x10 inch pen stippling self portrait on white paper. (2026)" },
+  ];
+
+  const AP4 = [
     { src: Silhouette, caption: "31x36 inch oil paint self portrait on unstretched canvas. (2025)" },
+    { src: CharcoalTan, caption: "18x24 inch charcoal self portrait on tan paper. (2026)" },
+    { src: Mirror, caption: "16x20 inch oil paint self portrait on canvas. (2025)" },
   ];
 
   const AP3 = [
@@ -117,8 +126,9 @@ export default function Art() {
         represented. 
       </div>
 
-      <GalleryGrid images={AP1}> </GalleryGrid>
       <GalleryGrid images={AP2}> </GalleryGrid>
+      <GalleryGrid images={AP1}> </GalleryGrid>
+      <GalleryGrid images={AP4}> </GalleryGrid>
       <GalleryGrid images={AP3}> </GalleryGrid>
 
       <div className="gallery-section-header">

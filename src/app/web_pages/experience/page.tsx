@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import HeadShot from "../../assets/headShot.jpeg";
+import Resume from "../../assets/resume.png";
 import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
@@ -104,9 +105,12 @@ export default function Experience() {
           />
         </div>
       </section>
+
+      <Image src={Resume} alt="Resume" style={{height: "90%", width: "90%"}}/>
+
       <ContactButton href="/web_pages/gallery"
                       style = {{ width: "150px", fontSize: "19px"}}>
-        VIEW Gallery
+        View Gallery
       </ContactButton>
 
       <Footer />
