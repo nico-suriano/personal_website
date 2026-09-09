@@ -14,7 +14,6 @@ import Frame from "./assets/pictureFrame.png";
 import "./css/homepage.css";
 import "./css/logo.css";
 
-
 export default function Home() {
 
   const [animateHeader, setAnimateHeader] = useState(false);
